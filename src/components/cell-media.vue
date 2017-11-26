@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="m-cell-media-bottom">
-        <p v-if="author">作者：{{author}}</p>
+        <p v-if="upvote">点赞数：{{upvote}}</p>
         <p v-if="column">{{column}}</p>
       </div>
     </a>
@@ -22,7 +22,7 @@
 </template>
 <script>
   export default {
-    props: ['author', 'column', 'img']
+    props: ['upvote', 'column', 'img']
   }
 
 </script>
